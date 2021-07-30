@@ -1,4 +1,4 @@
-package study.basics;
+package study.basics.arrays;
 
 import java.util.Collection;
 import java.util.Iterator;

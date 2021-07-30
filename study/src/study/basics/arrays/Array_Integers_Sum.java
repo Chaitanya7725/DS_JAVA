@@ -1,4 +1,4 @@
-package study.basics;
+package study.basics.arrays;
 
 public class Array_Integers_Sum {
 
