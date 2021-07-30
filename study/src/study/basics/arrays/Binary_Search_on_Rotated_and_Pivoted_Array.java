@@ -6,7 +6,7 @@ public class Binary_Search_on_Rotated_and_Pivoted_Array {
 	
 	public static void main(String[] args) {
 
-		int elementToBeSearched = 10;
+		int elementToBeSearched = 1;
 		int l=0;
 		int r=arr.length-1;
 		int pivot=findPivot(l,r);
@@ -16,14 +16,14 @@ public class Binary_Search_on_Rotated_and_Pivoted_Array {
 		}else {
 			r=pivot;
 		}
-		System.out.print(getBinaryResult(elementToBeSearched,l,r));
+		System.out.print("The "+elementToBeSearched+" is present at index no: "+getBinaryResult(elementToBeSearched,l,r));
 	}
 
 	private static int getBinaryResult(int elementToBeSearched,int l, int r) {
 		while(l<r) {
 			int mid=(l+r)/2;
 			if (elementToBeSearched==arr[mid]) {
-				return arr[mid];
+				return mid;
 			} else if(elementToBeSearched>arr[mid]){
 				l=mid+1;
 				getBinaryResult(elementToBeSearched,l,r);
